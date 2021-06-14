@@ -321,8 +321,7 @@ bool operator!=(const unordered_map<Key, T, Hash, KeyEqual>& lhs,
 }
 
 template<typename Key, typename T, typename Hash, typename KeyEqual>
-void swap(unordered_map<Key, T, Hash, KeyEqual>& lhs,
-          unordered_map<Key, T, Hash, KeyEqual>& rhs) {
+void swap(unordered_map<Key, T, Hash, KeyEq, T, Hash, KeyEqual>& rhs) {
     lhs.swap(rhs);
 }
 
